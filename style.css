@@ -61,7 +61,14 @@ header {
     font-weight: bold;
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease, background-size 0.3s ease;
 }
+
+.main-info section:hover {
+    transform: scale(0.98);
+    background-size: 100%;
+}
+
 
 .main-info section::before {
     content: "";
@@ -74,9 +81,14 @@ header {
     z-index: 2;
 }
 
+.main-info section:hover::before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
 .main-info section h1 {
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 #category1 {
