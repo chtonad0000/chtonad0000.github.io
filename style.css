@@ -199,6 +199,31 @@ a:visited {
     font-size: 10px;
 }
 
+.table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 0;
+    background-color: #2f2f2f;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.table-header {
+    font-weight: bold;
+    background-color: #4a4a4a;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.table-row {
+    background-color: #3a3a3a;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.table-row:nth-child(even) {
+    background-color: #2a2a2a;
+}
 
 @media screen and (max-width: 900px) {
     header {
@@ -219,6 +244,10 @@ a:visited {
     }
     .main-info section {
         font-size: 0.8rem;
+    }
+    .main-info section:hover {
+        transform: scale(0.99);
+        background-size: 210%;
     }
     .about-info section {
         font-size: 0.8rem;
@@ -248,5 +277,10 @@ a:visited {
     }
     .main-info section {
         font-size: 1.0rem;
+    }
+
+    .main-info section:hover {
+        transform: scale(0.99);
+        background-size: 110%;
     }
 }
