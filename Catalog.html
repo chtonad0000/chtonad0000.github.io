@@ -8,88 +8,88 @@
     <link rel="icon" href="assets/logoJpg.png">
 </head>
 <body>
-    <header>
-        <div class="website-name">
-            <img src="assets/logoJpg.png" alt="Logo" class="logo">
-            <h1>Riff N' Rhythm</h1>
-        </div>
-        <nav class="navigation">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="index.html#about-us">О нас</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <aside class="filters">
-            <h3>Фильтры</h3>
-            <form>
-                <label>
-                    <input type="checkbox"> Акустические гитары
-                </label><br>
-                <label>
-                    <input type="checkbox"> Электрогитары
-                </label><br>
-                <label>
-                    <input type="checkbox"> Другое оборудование
-                </label><br>
-            </form>
-        </aside>
-        <section class="products">
-            <article>
-                <img src="assets/lesPaul.jpg" alt="guitar1">
-                <h2>Gibson Les Paul Gold</h2>
-                <p>Цена: 500 000₽</p>
-                <button>Купить</button>
-            </article>
-            <article>
-                <img src="assets/fenderStrato.jpeg" alt="guitar2">
-                <h2>Fender Stratocaster</h2>
-                <p>Цена: 68 000₽</p>
-                <button>Купить</button>
-            </article>
-            <article>
-                <img src="assets/yamahaF310.jpeg" alt="guitar3">
-                <h2>Yamaha F310</h2>
-                <p>Цена: 15 000₽</p>
-                <button>Купить</button>
-            </article>
-            <article>
-                <img src="assets/esp.jpg" alt="guitar4">
-                <h2>ESP LTD LH</h2>
-                <p>Цена: 86 000₽</p>
-                <button>Купить</button>
-            </article>
-            <article>
-                <img src="assets/cd60sce.jpg" alt="guitar5">
-                <h2>Fender CD60SCE</h2>
-                <p>Цена: 70 000₽</p>
-                <button>Купить</button>
-            </article>
-            <article class="accessories">
-                <img src="assets/marshall50.jpg" alt="amp1">
-                <h2>Комбоусилитель Marshall MG50FX</h2>
-                <p>Цена: 81 000₽</p>
-                <button>Купить</button>
-            </article>
-            <article class="accessories">
-                <img src="assets/ds1.jpg" alt="pedal1">
-                <h2>Педаль эффектов Boss DS-1</h2>
-                <p>Цена: 6 000₽</p>
-                <button>Купить</button>
-            </article>
-            <article class="accessories">
-                <img src="assets/yamahaGA15II.jpg" alt="amp2">
-                <h2>Комбоусилитель Yamaha GA15II</h2>
-                <p>Цена: 20 000₽</p>
-                <button>Купить</button>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <div class="copyrights">
-            <p>© 2024 Riff N' Rhythm. All rights reserved</p>
-        </div>
-    </footer>
+<header class="header">
+    <div class="header__website-name">
+        <img src="assets/logoJpg.png" alt="Logo" class="header__logo">
+        <h1 class="header__title">Riff N' Rhythm</h1>
+    </div>
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a></li>
+            <li class="navigation__item"><a href="index.html#about-us" class="navigation__link">О нас</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <aside class="filters">
+        <h3 class="filters__title">Фильтры</h3>
+        <form class="filters__form">
+            <label class="filters__label">
+                <input type="checkbox" class="filters__input"> Акустические гитары
+            </label><br>
+            <label class="filters__label">
+                <input type="checkbox" class="filters__input"> Электрогитары
+            </label><br>
+            <label class="filters__label">
+                <input type="checkbox" class="filters__input"> Другое оборудование
+            </label><br>
+        </form>
+    </aside>
+    <section class="products">
+        <article class="products__item">
+            <img src="assets/lesPaul.jpg" alt="guitar1" class="products__image">
+            <h2 class="products__name">Gibson Les Paul Gold</h2>
+            <p class="products__price">Цена: 500 000₽</p>
+            <button class="products__button">Купить</button>
+        </article>
+        <article class="products__item">
+            <img src="assets/fenderStrato.jpeg" alt="guitar2" class="products__image">
+            <h2 class="products__name">Fender Stratocaster</h2>
+            <p class="products__price">Цена: 68 000₽</p>
+            <button class="products__button">Купить</button>
+        </article>
+        <article class="products__item">
+            <img src="assets/yamahaF310.jpeg" alt="guitar3" class="products__image">
+            <h2 class="products__name">Yamaha F310</h2>
+            <p class="products__price">Цена: 15 000₽</p>
+            <button class="products__button">Купить</button>
+        </article>
+        <article class="products__item">
+            <img src="assets/esp.jpg" alt="guitar4" class="products__image">
+            <h2 class="products__name">ESP LTD LH</h2>
+            <p class="products__price">Цена: 86 000₽</p>
+            <button class="products__button">Купить</button>
+        </article>
+        <article class="products__item">
+            <img src="assets/cd60sce.jpg" alt="guitar5" class="products__image">
+            <h2 class="products__name">Fender CD60SCE</h2>
+            <p class="products__price">Цена: 70 000₽</p>
+            <button class="products__button">Купить</button>
+        </article>
+        <article class="products__item products__item_type_accessory">
+            <img src="assets/marshall50.jpg" alt="amp1" class="products__image">
+            <h2 class="products__name">Комбоусилитель Marshall MG50FX</h2>
+            <p class="products__price">Цена: 81 000₽</p>
+            <button class="products__button">Купить</button>
+        </article>
+        <article class="products__item products__item_type_accessory">
+            <img src="assets/ds1.jpg" alt="pedal1" class="products__image">
+            <h2 class="products__name">Педаль эффектов Boss DS-1</h2>
+            <p class="products__price">Цена: 6 000₽</p>
+            <button class="products__button">Купить</button>
+        </article>
+        <article class="products__item products__item_type_accessory">
+            <img src="assets/yamahaGA15II.jpg" alt="amp2" class="products__image">
+            <h2 class="products__name">Комбоусилитель Yamaha GA15II</h2>
+            <p class="products__price">Цена: 20 000₽</p>
+            <button class="products__button">Купить</button>
+        </article>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__copyrights">
+        <p>© 2024 Riff N' Rhythm. All rights reserved</p>
+    </div>
+</footer>
 </body>
 </html>

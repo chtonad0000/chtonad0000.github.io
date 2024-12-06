@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header {
+.header {
     display: flex;
     align-items: center;
     margin-bottom: 0;
@@ -17,7 +17,7 @@ header {
     z-index: 10;
 }
 
-.website-name {
+.header__website-name {
     display: flex;
     align-items: center;
     font-family: Arial, sans-serif;
@@ -29,13 +29,13 @@ header {
     text-align: left;
 }
 
-.website-name .logo {
+.header__website-name .header__logo {
     width: 60px;
     height: auto;
     margin-right: 10px;
 }
 
-.website-name h1 {
+.header__website-name h1 {
     margin: 0;
 }
 
@@ -55,13 +55,13 @@ header {
     text-decoration: underline overline;
 }
 
-.navigation ul {
+.navigation__list {
     display: flex;
     align-items: center;
     list-style: none;
 }
 
-.navigation ul li {
+.navigation__list .navigation__item {
     margin-right: 20px;
 }
 
@@ -74,10 +74,9 @@ a:visited {
     color: inherit;
 }
 
-main {
+.main {
     display: flex;
     width: 100%;
-
 }
 
 .filters {
@@ -86,12 +85,12 @@ main {
     padding: 20px;
 }
 
-.filters h3 {
+.filters__title {
     margin-bottom: 10px;
     color: #333;
 }
 
-.filters form label {
+.filters__form .filters__label {
     display: block;
     margin-bottom: 10px;
     font-size: 14px;
@@ -107,7 +106,7 @@ main {
     background-color: #f9f9f9;
 }
 
-article {
+.products__item {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -122,7 +121,7 @@ article {
     align-items: center;
 }
 
-article img {
+.products__item img {
     width: 50%;
     height: 350px;
     object-fit: cover;
@@ -130,22 +129,22 @@ article img {
     margin-bottom: 10px;
 }
 
-.accessories img{
+.products__item_type_accessory img {
     width: 100%;
 }
 
-article h2 {
+.products__item h2 {
     font-size: 18px;
     margin: 10px 0;
 }
 
-article p {
+.products__item p {
     font-size: 16px;
     color: #555;
     margin-bottom: 10px;
 }
 
-article button {
+.products__item button {
     background-color: #007bff;
     color: white;
     padding: 10px 15px;
@@ -155,25 +154,25 @@ article button {
     transition: background-color 0.3s;
 }
 
-article button:hover {
+.products__item button:hover {
     background-color: #0056b3;
 }
 
-.copyrights {
+.footer {
     color: white;
     text-align: center;
 }
 
 @media screen and (max-width: 640px) {
-    header {
+    .header {
         height: 50px;
         width: 100%;
     }
-    .website-name .logo {
+    .header__website-name .header__logo {
         width: 40px;
     }
 
-    .website-name h1 {
+    .header__website-name h1 {
         font-size: 1.5rem;
     }
 
@@ -182,11 +181,11 @@ article button:hover {
         font-size: 0.9rem;
     }
 
-    article img {
+    .products__item img {
         height: 150px;
     }
 
-    main {
+    .main {
         flex-direction: column;
     }
 
@@ -195,29 +194,29 @@ article button:hover {
         padding: 0;
     }
 
-    .filters h3,
-    .filters form label {
+    .filters__title,
+    .filters__form .filters__label {
         padding-left: 20px;
     }
 
     .products {
         width: 100%;
     }
-    footer {
+    .footer {
         font-size: 0.7rem;
     }
 }
 
 @media screen and (min-width: 640px) and (max-width: 900px) {
-    header {
+    .header {
         height: 50px;
         width: 100%;
     }
-    .website-name .logo {
+    .header__website-name .header__logo {
         width: 40px;
     }
 
-    .website-name h1 {
+    .header__website-name h1 {
         font-size: 1.5rem;
     }
 
@@ -226,11 +225,11 @@ article button:hover {
         font-size: 0.9rem;
     }
 
-    article img {
+    .products__item img {
         height: 250px;
     }
 
-    main {
+    .main {
         flex-direction: row;
     }
 
@@ -244,15 +243,15 @@ article button:hover {
 }
 
 @media screen and (min-width: 900px) and (max-width: 1280px) {
-    header {
+    .header {
         height: 60px;
         width: 100%;
     }
-    .website-name .logo {
+    .header__website-name .header__logo {
         width: 60px;
     }
 
-    .website-name h1 {
+    .header__website-name h1 {
         font-size: 1.7rem;
     }
 
@@ -261,11 +260,11 @@ article button:hover {
         font-size: 1.1rem;
     }
 
-    article img {
+    .products__item img {
         height: 300px;
     }
 
-    main {
+    .main {
         flex-direction: row;
     }
 

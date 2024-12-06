@@ -5,7 +5,8 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
 }
-header {
+
+.header {
     display: flex;
     align-items: center;
     margin-bottom: 0;
@@ -17,8 +18,7 @@ header {
     z-index: 10;
 }
 
-
-.website-name {
+.header__website-name {
     display: flex;
     align-items: center;
     font-family: Arial, sans-serif;
@@ -31,85 +31,15 @@ header {
     transition: width 0.3s ease;
 }
 
-.website-name .logo {
+.header__logo {
     width: 70px;
     height: auto;
     margin-right: 10px;
     transition: width 0.3s ease;
 }
 
-.website-name h1 {
+.header__title {
     margin: 0;
-}
-
-.main-info {
-    display: flex;
-    align-items: stretch;
-    flex-wrap: nowrap;
-    gap: 0;
-}
-
-.main-info section {
-    flex: 1 1 0;
-    height: 625px;
-    text-align: center;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s ease, background-size 0.3s ease;
-}
-
-.main-info section:hover {
-    transform: scale(0.98);
-    background-size: 100%;
-}
-
-
-.main-info section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-}
-
-.main-info section:hover::before {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-
-.main-info section h1 {
-    position: relative;
-    z-index: 3;
-}
-
-#category1 {
-    background-image: url('assets/acoustic.jpg');
-}
-
-#category2 {
-    background-image: url('assets/slash.jpg');
-}
-
-#category3 {
-    background-image: url('assets/combo.jpg');
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-a:visited {
-    color: inherit;
 }
 
 .navigation {
@@ -128,14 +58,86 @@ a:visited {
     text-decoration: underline overline;
 }
 
-.navigation ul {
+.navigation__list {
     display: flex;
     align-items: center;
     list-style: none;
 }
 
-.navigation ul li {
+.navigation__item {
     margin-right: 20px;
+}
+
+.main {
+    padding: 0;
+}
+
+.main__info {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+.main__category {
+    flex: 1 1 0;
+    height: 625px;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, background-size 0.3s ease;
+}
+
+.main__category:hover {
+    transform: scale(0.98);
+    background-size: 100%;
+}
+
+.main__category::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.main__category:hover::before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main__category-title {
+    position: relative;
+    z-index: 3;
+}
+
+.main__category_type_acoustic {
+    background-image: url('assets/acoustic.jpg');
+}
+
+.main__category_type_electric {
+    background-image: url('assets/slash.jpg');
+}
+
+.main__category_type_accessories {
+    background-image: url('assets/combo.jpg');
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
 }
 
 .about-info {
@@ -151,6 +153,58 @@ a:visited {
     padding: 20px;
 }
 
+.about-info__section {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.1;
+    color: white;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    display: inline-block;
+    z-index: 1;
+}
+
+.about-info__title {
+    font-size: 2rem;
+}
+
+.about-info__description {
+    font-size: 1rem;
+}
+
+
+
+.about-info__table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    background-color: #2f2f2f;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.about-info__table-header {
+    font-weight: bold;
+    background-color: #4a4a4a;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.about-info__table-header_type_column {
+    text-align: center;
+}
+
+.about-info__table-row {
+    background-color: #3a3a3a;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.about-info__table-row:nth-child(even) {
+    background-color: #2a2a2a;
+}
 
 #about-us {
     scroll-margin-top: 10vh;
@@ -163,78 +217,30 @@ a:visited {
     padding: 20px;
 }
 
-.about-info::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-}
-.about-info section {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.1;
-    color: white;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: normal;
-    text-align: left;
-    display: inline-block;
-    z-index: 1;
-}
 
-
-.ascii-guitar {
+.about-info__ascii-guitar {
     font-size: 10px;
 }
 
-.copyrights {
+.footer__copyrights {
     text-align: center;
 }
 
-.code {
+.footer__code {
     font-family: Courier, monospace;
     font-size: 10px;
 }
 
-.table {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
-    gap: 0;
-    background-color: #2f2f2f;
-    padding: 0;
-    border-radius: 10px;
-}
-
-.table-header {
-    font-weight: bold;
-    background-color: #4a4a4a;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.table-row {
-    background-color: #3a3a3a;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.table-row:nth-child(even) {
-    background-color: #2a2a2a;
-}
-
 @media screen and (max-width: 900px) {
-    header {
+    .header {
         height: 50px;
         width: 100%;
     }
-    .website-name .logo {
+    .header__logo {
         width: 40px;
     }
 
-    .website-name h1 {
+    .header__title {
         font-size: 1.5rem;
     }
 
@@ -242,32 +248,39 @@ a:visited {
         top: 3px;
         font-size: 0.9rem;
     }
-    .main-info section {
+    .main__category {
         font-size: 0.8rem;
     }
-    .main-info section:hover {
+    .main__category:hover {
         transform: scale(0.99);
         background-size: 210%;
     }
-    .about-info section {
+    .about-info__section {
         font-size: 0.8rem;
     }
-    .code {
+
+    .about-info__description {
+        font-size: 0.7rem;
+    }
+
+    .about-info__ascii-guitar {
+        font-size: 0.5rem;
+    }
+    .footer__code {
         display: none;
     }
 }
 
-
-@media screen and (min-width: 900px) and (max-width: 1280px){
-    header {
+@media screen and (min-width: 900px) and (max-width: 1280px) {
+    .header {
         height: 60px;
         width: 100%;
     }
-    .website-name .logo {
+    .header__logo {
         width: 60px;
     }
 
-    .website-name h1 {
+    .header__title {
         font-size: 1.7rem;
     }
 
@@ -275,11 +288,10 @@ a:visited {
         top: 1px;
         font-size: 1.1rem;
     }
-    .main-info section {
+    .main__category {
         font-size: 1.0rem;
     }
-
-    .main-info section:hover {
+    .main__category:hover {
         transform: scale(0.99);
         background-size: 110%;
     }
