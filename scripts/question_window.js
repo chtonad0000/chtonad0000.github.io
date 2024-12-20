@@ -37,7 +37,7 @@ askButton.addEventListener('click', () => {
                 // Set a 2-second delay to simulate the process of sending the question
                 setTimeout(() => {
                     loader.close();
-                }, 2000);
+                }, 1000);
             }
         }
     });

@@ -20,7 +20,7 @@ async function loadComments() {
         `;
                 commentsList.appendChild(commentItem);
             });
-        }, 2000);
+        }, 1000);
 
     } catch (error) {
         preloader.style.display = 'none';

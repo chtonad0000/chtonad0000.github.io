@@ -6,4 +6,3 @@ navLinks.forEach(link => {
         link.classList.add('navigation__link--active');
     }
 });
-console.log(document.location.pathname);
