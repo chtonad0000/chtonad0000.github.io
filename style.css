@@ -55,7 +55,6 @@ body {
     text-align: left;
     padding: 1px;
     text-transform: uppercase;
-    text-decoration: underline overline;
 }
 
 .navigation__list {
@@ -66,6 +65,21 @@ body {
 
 .navigation__item {
     margin-right: 20px;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: inherit;
+    transition: text-decoration 0.3s;
+}
+
+.navigation__link:hover {
+    text-decoration: underline overline;
+}
+
+.navigation__link--active {
+    text-decoration: underline overline;
+    font-weight: bold;
 }
 
 .main {
@@ -174,7 +188,6 @@ a:visited {
 }
 
 
-
 .about-info__table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -213,13 +226,28 @@ a:visited {
 }
 
 #contacts {
+    font-size: 12px;
     width: 300px;
     padding: 20px;
 }
 
+.ask-question-button {
+    background-color: rgba(143, 143, 143, 0.61);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ask-question-button:hover {
+    background-color: #45a049;
+}
 
 .about-info__ascii-guitar {
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .footer__copyrights {
@@ -236,6 +264,7 @@ a:visited {
         height: 50px;
         width: 100%;
     }
+
     .header__logo {
         width: 40px;
     }
@@ -245,16 +274,19 @@ a:visited {
     }
 
     .navigation {
-        top: 3px;
-        font-size: 0.9rem;
+        top: 8px;
+        font-size: 0.7rem;
     }
+
     .main__category {
         font-size: 0.8rem;
     }
+
     .main__category:hover {
         transform: scale(0.99);
         background-size: 210%;
     }
+
     .about-info__section {
         font-size: 0.8rem;
     }
@@ -264,8 +296,9 @@ a:visited {
     }
 
     .about-info__ascii-guitar {
-        font-size: 0.5rem;
+        display: none;
     }
+
     .footer__code {
         display: none;
     }
@@ -276,6 +309,7 @@ a:visited {
         height: 60px;
         width: 100%;
     }
+
     .header__logo {
         width: 60px;
     }
@@ -288,9 +322,11 @@ a:visited {
         top: 1px;
         font-size: 1.1rem;
     }
+
     .main__category {
         font-size: 1.0rem;
     }
+
     .main__category:hover {
         transform: scale(0.99);
         background-size: 110%;

@@ -6,6 +6,14 @@
     <title>Riff N' Rhythm</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/logoJpg.png">
+    <script src="scripts/interactive-menu.js" defer></script>
+    <script src="scripts/load-time.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/vex-js@4.0.0/dist/css/vex.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vex-js@4.0.0/dist/css/vex-theme-default.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/vex-js@4.0.0/dist/js/vex.combined.min.js"></script>
+    <script src="scripts/question_window.js" defer></script>
 </head>
 <body>
 <header class="header">
@@ -15,8 +23,9 @@
     </div>
     <nav class="navigation">
         <ul class="navigation__list">
+            <li class="navigation__item"><a href="Catalog.html" class="navigation__link">Каталог</a></li>
             <li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a></li>
-            <li class="navigation__item"><a href="#about-us" class="navigation__link">О нас</a></li>
+            <li class="navigation__item"><a href="reviews.html" class="navigation__link">Отзывы</a></li>
         </ul>
     </nav>
 </header>
@@ -76,6 +85,7 @@
                 <li class="about-info__contacts-item">Телефон: +7 (952) 666 99-99</li>
                 <li class="about-info__contacts-item">Адрес: г. Санкт-Петербург, Вяземский 5-7</li>
             </ul>
+            <button id="ask-question-button" class="ask-question-button">Задать вопрос консультанту</button>
             <pre class="about-info__ascii-guitar">
                     _,.,
                 ,'   ,'

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отзывы</title>
+  <link rel="stylesheet" href="review.css">
+  <link rel="icon" href="assets/logoJpg.png">
+  <script src="scripts/load-time.js" defer></script>
+  <script src="scripts/interactive-menu.js" defer></script>
+  <script src="scripts/review.js" defer></script>
+  <script src="scripts/comments.js" defer></script>
+</head>
+<body>
+<header class="header">
+  <div class="header__website-name">
+    <img src="assets/logoJpg.png" alt="Logo" class="header__logo">
+    <h1 class="header__title">Riff N' Rhythm</h1>
+  </div>
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item"><a href="Catalog.html" class="navigation__link">Каталог</a></li>
+      <li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a></li>
+      <li class="navigation__item"><a href="reviews.html" class="navigation__link">Отзывы</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main">
+  <section class="reviews-section">
+    <h2>Оставьте отзыв</h2>
+    <form id="review-form">
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" required><br><br>
+
+      <label for="review">Ваш отзыв:</label>
+      <textarea id="review" required></textarea><br><br>
+
+      <label for="rating">Оценка (1-5):</label>
+      <input type="number" id="rating" min="1" max="5" required><br><br>
+
+      <button type="submit">Добавить отзыв</button>
+
+    </form>
+    <h2>Отзывы пользователей</h2>
+    <table id="reviews-table">
+      <thead>
+      <tr>
+        <th>Имя</th>
+        <th>Отзыв</th>
+        <th>Оценка</th>
+        <th>Дата добавления</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <button id="clear-reviews-button">Очистить таблицу</button>
+  </section>
+
+  <section class="comments-section">
+    <h2>Комментарии с Яндекс Карт</h2>
+    <div id="preloader" class="preloader"></div>
+    <ul id="comments-list"></ul>
+    <div id="error-message" class="error-message" style="display:none;">⚠ Что-то пошло не так</div>
+  </section>
+</main>
+<footer class="footer">
+  <p>© 2024 Riff N' Rhythm. Все права защищены.</p>
+</footer>
+</body>
+</html>
